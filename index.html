@@ -8,56 +8,58 @@
     <link rel="stylesheet" href="CSS/estilos.css"> <!--y por ultimo podemos agregar estilos desde un archivo en .css e ir agregando los estilos desde un archivo externo-->
 </head>
 <body>
-    <header ><!--Se puedem agragar estilos dorecto a linea, o sea en las etiquetas con Style -->
+    <header class="header">
         <div>
-            <figure> 
+            <figure class="logo"> 
                 <img src="https://i.imgur.com/aSxbYEI.jpg" alt="Logo de http://samuelbautista.com" width="100"> 
             </figure>
         </div>
-        <nav>
+        <nav class="menu">
             <ul>
                 <li>
-                    <a href="#Portafolio">Portafolio</a>
+                    <a class="link" href="#Portafolio">Portafolio</a>
                 </li>
                 <li>
-                    <a href="#Experiencia">Experiencia</a>
+                    <a class="link" href="#Experiencia">Experiencia</a>
                 </li>
                 <li>
-                    <a href="#Trabajo">Trabajemos juntos</a>
+                    <a class="link" href="#Trabajo">Trabajemos juntos</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="hero">
         <h1>
             Hola! Soy <strong>Samuel Bautista</strong> <br> Desarollador <srtrong>Web/Movil</srtrong>
         </h1>
         <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/96945031_1309227679273464_9164215571091292160_o.jpg?_nc_cat=111&_nc_sid=09cbfe&_nc_eui2=AeGf65dwa0jBPXjjoS049ctEgqq2WpNsQSaCqrZak2xBJrerwjTa2R10Z70oVEFUBZ4R4THnQHdxWfd_Etp1Fnji&_nc_oc=AQkux92u86n06GGabt18r2Chc5by6g-3towlJvgCzBJkavPd8oZ3zxVJO8wF_6ks1zY&_nc_ht=scontent-qro1-1.xx&oh=b0adcccafbb9117bb8fbb7c7f7c38039&oe=5EED7308" width="300"  alt="imagen principal"/> 
     </section>
-    <section id="Portafolio">
-        <h2>Portafolio (proyctos destacados)</h2>
-        <article>
-            <h3>Platzi video</h3>
-            <h6>React Native / React</h6>
-            <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
-            <p><small> <strong>Puedes cerlo en::</strong> www.proyecto.com/native</small></p>
-            <p>Descripción del proyecto</p> 
-            <img src="https://i.imgur.com/FkMcZDD.png" alt="Imagen de javascript">
+    <section id="Portafolio" class="portfolio">
+        <h2>Portafolio (proyectos destacados)</h2>
+        <article class="project">
+            <h3 class="project-title">Platzi video</h3>
+            <h6 class="project-course">React Native / React</h6>
+            <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+            <p class="project-url"><small> <strong>Puedes cerlo en::</strong> www.proyecto.com/native</small></p>
+            <p class="project-description">Descripción del proyecto</p> 
+            <figure class="project-imageContainer">
+                <img class="project-image" src="https://i.imgur.com/FkMcZDD.png" alt="Imagen de javascript">
+            </figure>
         </article>
     </section>
     <section id="Experiencia">
         <h2>Más sobre mi experiencia</h2>
-        <article>
-            <figure>
-                <img src="https://i.imgur.com/Aosuved.jpg" width="300"/>
+        <article class="experience">
+            <figure class="experience-imageContainer">
+                <img class="experience-image" src="https://i.imgur.com/Aosuved.jpg" width="300"/>
             </figure>
-            <h3>Conf México 2020</h3>
-            <p>Descripción del evento</p>
-            <a>Ver evento</a>
+            <h3 class="experience-title">Conf México 2020</h3>
+            <p class="experience-description">Descripción del evento</p>
+            <a class="experience-url" href="https://youtu.be/SeOQS-WUg2g" target="_blank">Ver evento</a>
         </article>
     </section>
-    <section id="Trabajo">
-        <form action="/subscripcion/"><!--El atributo es más importante para el backend-->
+    <section id="Trabajo" class="contact">
+        <form class="form-email" action="/subscripcion/"><!--El atributo es más importante para el backend-->
             <h3>¿Creamos algo juntos?</h3>
             
             <input type="datetime" placeholder="Dejános tu email" id="email"> <!--en el atributo de type al modificarlo podemos decirle la acción que queremos que haga -->
@@ -65,7 +67,7 @@
             <button>Enviar</button>
         </form>
     </section>
-    <footer>Footer</footer>
+    <footer class="footer">Footer</footer>
     
     <p><img src="https://i.imgur.com/mH2Xb1J.gif" /></p>
     
