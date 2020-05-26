@@ -40,3 +40,14 @@ h1 {
     /* text-transform: capitalize;
     text-decoration: dashed; */
 }
+.hero{
+    height: 300px;
+}
+
+.proyect-details{
+    width: 500px;
+}
+
+.proyect-imageContainer{
+    width: 500px;
+}
