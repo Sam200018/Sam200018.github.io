@@ -43,6 +43,7 @@ h1 {
   line-height: 1.5;
   letter-spacing: -0.2px;
   color: white;
+  margin: 0 auto;
   /* text-transform: capitalize;
     text-decoration: dashed; */
 }
@@ -73,6 +74,10 @@ h1 strong {
     border-top-right-radius: 12px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;*/
+    margin-bottom: 15px;
+    /* margin-right
+    margin-left
+    margin-top */
 }
 
 .project-details {
