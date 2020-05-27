@@ -33,44 +33,61 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Fjalla One", sans-serif;
-    font-weight: normal;
-    /* font-style: oblique; */
+  font-family: "Fjalla One", sans-serif;
+  font-weight: normal;
+  /* font-style: oblique; */
 }
 
 h1 {
-    font-size: 40px;
-    line-height: 1.5;
-    letter-spacing: -.2px;
-    color: white;
-    /* text-transform: capitalize;
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  color: white;
+  /* text-transform: capitalize;
     text-decoration: dashed; */
 }
-h1 strong{
-    color:#026fff;
+h1 strong {
+  color: #026fff;
 }
-.hero{
-    height: 300px;
-    background-image: url('https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/96945031_1309227679273464_9164215571091292160_o.jpg?_nc_cat=111&_nc_sid=09cbfe&_nc_eui2=AeGf65dwa0jBPXjjoS049ctEgqq2WpNsQSaCqrZak2xBJrerwjTa2R10Z70oVEFUBZ4R4THnQHdxWfd_Etp1Fnji&_nc_oc=AQkux92u86n06GGabt18r2Chc5by6g-3towlJvgCzBJkavPd8oZ3zxVJO8wF_6ks1zY&_nc_ht=scontent-qro1-1.xx&oh=b0adcccafbb9117bb8fbb7c7f7c38039&oe=5EED7308');
-    background-color: #1b2127;
-    background-size: 300px 300px;
-    background-repeat: no-repeat;
-    background-position: right;
+.hero {
+  height: 300px;
+  background-image: url("https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/96945031_1309227679273464_9164215571091292160_o.jpg?_nc_cat=111&_nc_sid=09cbfe&_nc_eui2=AeGf65dwa0jBPXjjoS049ctEgqq2WpNsQSaCqrZak2xBJrerwjTa2R10Z70oVEFUBZ4R4THnQHdxWfd_Etp1Fnji&_nc_oc=AQkux92u86n06GGabt18r2Chc5by6g-3towlJvgCzBJkavPd8oZ3zxVJO8wF_6ks1zY&_nc_ht=scontent-qro1-1.xx&oh=b0adcccafbb9117bb8fbb7c7f7c38039&oe=5EED7308");
+  background-color: #1b2127;
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.project {
+  /* border-top: 10px solid red;
+  border-right: 10px solid green;
+  border-left: 10px solid royalblue;
+  border-bottom: 10px solid orange; */
+  /* border-color: royalblue; */
+  /*color: blue;*/
+  /* border-top-color: red;
+  border-top-width: 15px;
+  border-top-style: solid; */
+  border: 1px solid gray;
+  border-radius: 10px;
+  /* border-top-left-radius: 50px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;*/
 }
 
-.proyect-details{
-    width: 500px;
+.project-details {
+  width: 500px;
 }
 
-.proyect-imageContainer{
-    width: 500px;
+.project-imageContainer {
+  width: 500px;
 }
 
-.header{
-    background-color:#1b2127;
-    color: white;
+.header {
+  background-color: #1b2127;
+  color: white;
 }
-.header a{
-    color: white;
-    text-decoration: none;
+.header a {
+  color: white;
+  text-decoration: none;
 }
