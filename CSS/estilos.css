@@ -105,3 +105,18 @@ h1 strong {
   color: white;
   text-decoration: none;
 }
+.flexbox{
+  display: flex;
+  /* flex-direction: column; */
+  /* flex-wrap: nowrap; Para que los elemento no se les permita bajar*/ 
+  flex-wrap: wrap;/*Esto es para que cuando el numero de elementos lenen el espacio horizontal pasen a la perte inferior*/
+}
+
+.box{
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+  margin: 5px;
+  flex-shrink: 0;
+
+}
