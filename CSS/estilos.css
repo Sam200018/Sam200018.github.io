@@ -51,6 +51,15 @@ h1 {
 h1 strong {
   color: #026fff;
 }
+ol,
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+figure{
+  margin: 0;
+}
 .hero {
   height: 300px;
   background-image: url("https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/96945031_1309227679273464_9164215571091292160_o.jpg?_nc_cat=111&_nc_sid=09cbfe&_nc_eui2=AeGf65dwa0jBPXjjoS049ctEgqq2WpNsQSaCqrZak2xBJrerwjTa2R10Z70oVEFUBZ4R4THnQHdxWfd_Etp1Fnji&_nc_oc=AQkux92u86n06GGabt18r2Chc5by6g-3towlJvgCzBJkavPd8oZ3zxVJO8wF_6ks1zY&_nc_ht=scontent-qro1-1.xx&oh=b0adcccafbb9117bb8fbb7c7f7c38039&oe=5EED7308");
@@ -100,11 +109,30 @@ h1 strong {
 .header {
   background-color: #1b2127;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
 }
 .header a {
   color: white;
   text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
 }
+.header ul {
+  display: flex;
+  height: inherit;
+}
+.header ul li{
+  height: inherit;
+}
+
+.menu{
+  height: inherit;
+}
+
 .flexbox{
   display: flex;
   /* flex-direction: column; */
@@ -117,6 +145,6 @@ h1 strong {
   height: 50px;
   border: 1px solid red;
   margin: 5px;
-  flex-shrink: 0;
+  flex-shrink: 0;/*Capacidad que les permite no encogerse*/
 
 }
