@@ -47,6 +47,7 @@ h1 {
   margin: 0 auto;
   /* text-transform: capitalize;
     text-decoration: dashed; */
+    margin: 0;
 }
 h1 strong {
   color: #026fff;
@@ -67,6 +68,8 @@ figure{
   background-size: 300px 300px;
   background-repeat: no-repeat;
   background-position: right;
+  display: flex;
+  align-items: center;
 }
 .portfolio{
   background: #fafafa;
@@ -110,8 +113,9 @@ figure{
   background-color: #1b2127;
   color: white;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  height: 90px;
+  height: 70px;
 }
 .header a {
   color: white;
@@ -147,4 +151,17 @@ figure{
   margin: 5px;
   flex-shrink: 0;/*Capacidad que les permite no encogerse*/
 
+}
+.footer{
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer img{
+  vertical-align: middle;
+}
+.footer a{
+  color: white;
 }
