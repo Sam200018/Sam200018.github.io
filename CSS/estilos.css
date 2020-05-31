@@ -22,12 +22,10 @@ valores*/
 /*gris claro= #626262*/
 /*background gris= #1b2127*/
 /*celeste= #026fff*/
-
 body {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
 }
-
 h1,
 h2,
 h3,
@@ -38,7 +36,6 @@ h6 {
   font-weight: normal;
   /* font-style: oblique; */
 }
-
 h1 {
   font-size: 40px;
   line-height: 1.5;
@@ -47,18 +44,27 @@ h1 {
   margin: 0 auto;
   /* text-transform: capitalize;
     text-decoration: dashed; */
-    margin: 0;
+  margin: 0;
 }
 h1 strong {
   color: #026fff;
 }
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #026fff;
+  text-transform: uppercase;
+  font-weight: bold; /*Es para poner las letras en negritas*/
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
 ol,
-ul{
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-figure{
+figure {
   margin: 0;
 }
 .hero {
@@ -71,11 +77,10 @@ figure{
   display: flex;
   align-items: center;
 }
-.portfolio{
+.portfolio {
   background: #fafafa;
+  padding: 20px;
 }
-
-
 .project {
   /* border-top: 10px solid red;
   border-right: 10px solid green;
@@ -92,23 +97,41 @@ figure{
     border-top-right-radius: 12px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;*/
-    margin: 10px;
-    margin-bottom: 15px;
-    /* margin-right
+  /* margin: 10px; */
+  margin-bottom: 15px;
+  /* margin-right
     margin-left
     margin-top */
-    padding: 20px ;
-    background: white;
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;/*Para poner los elementos separados, cada quien a su lado*/
 }
-
+.project-title{
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.project-course{
+  margin: 10px 0;
+}
+.project-date, 
+.project-url{
+  margin: 10px 0;
+}
+.project-description{
+  font-size: 20px;
+}
+.project strong{
+  font-family: "Fjalla One", sans-serif;
+}
 .project-details {
   width: 500px;
 }
-
 .project-imageContainer {
   width: 500px;
 }
-
 .header {
   background-color: #1b2127;
   color: white;
@@ -129,39 +152,35 @@ figure{
   display: flex;
   height: inherit;
 }
-.header ul li{
+.header ul li {
   height: inherit;
 }
-
-.menu{
+.menu {
   height: inherit;
 }
-
-.flexbox{
+.flexbox {
   display: flex;
   /* flex-direction: column; */
-  /* flex-wrap: nowrap; Para que los elemento no se les permita bajar*/ 
-  flex-wrap: wrap;/*Esto es para que cuando el numero de elementos lenen el espacio horizontal pasen a la perte inferior*/
+  /* flex-wrap: nowrap; Para que los elemento no se les permita bajar*/
+  flex-wrap: wrap; /*Esto es para que cuando el numero de elementos lenen el espacio horizontal pasen a la perte inferior*/
 }
-
-.box{
+.box {
   width: 50px;
   height: 50px;
   border: 1px solid red;
   margin: 5px;
-  flex-shrink: 0;/*Capacidad que les permite no encogerse*/
-
+  flex-shrink: 0; /*Capacidad que les permite no encogerse*/
 }
-.footer{
+.footer {
   color: white;
   background-color: #1b2127;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.footer img{
+.footer img {
   vertical-align: middle;
 }
-.footer a{
+.footer a {
   color: white;
 }
