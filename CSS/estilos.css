@@ -184,10 +184,10 @@ figure {
 .footer a {
   color: white;
 }
-.experience-list{
+.experience-list {
   display: flex;
 }
-.experience-list-title{
+.experience-list-title {
   padding-left: 10px;
 }
 .experience {
@@ -199,26 +199,85 @@ figure {
   overflow: hidden;
   background: #f4fbff;
 }
-.experience img{
+.experience img {
   width: 480px;
   height: 200px;
   object-fit: cover;
 }
-.experience-details{
+.experience-details {
   margin: 20px 40px;
-  margin-top: -40px;/*Junto con position podemos hacer que nuestro elemento suba sobre la imagen para dar el efecto de que está sobre ella*/
+  margin-top: -40px; /*Junto con position podemos hacer que nuestro elemento suba sobre la imagen para dar el efecto de que está sobre ella*/
   background-color: white;
-  position: relative;/* sirve para super posiciones pero tienes aún más funciones*/
+  position: relative; /* sirve para super posiciones pero tienes aún más funciones*/
   padding: 20px;
   text-align: center;
 }
-.experience-description{
+.experience-description {
   text-align: left;
 }
-.experience-url{
+.experience-url {
   color: #056fff;
-  border: 1px solid ;
+  border: 1px solid;
   padding: 5px 20px;
   text-decoration: none;
   border-radius: 5px;
+}
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social {
+  /* border: 1px solid red; */
+}
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  /* border: 1px solid white; */
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+.social-link.twitter {
+  background-image: url("https://cdn.icon-icons.com/icons2/1/PNG/256/social_Twitter_38.png");
+  
+}
+.social-link.facebook {
+  background-image: url("https://cdn.icon-icons.com/icons2/790/PNG/512/fb_icon-icons.com_65434.png");
+  
+}
+.social-link.github {
+  background-image: url("https://cdn.icon-icons.com/icons2/936/PNG/512/github-logo_icon-icons.com_73546.png");
+  
+}
+.social-link.instagram {
+  background-image: url("https://cdn.icon-icons.com/icons2/791/PNG/512/instagram_f_icon-icons.com_65485.png");
+  
+}
+.form-email input{
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url('https://cdn.icon-icons.com/icons2/656/PNG/512/mail_email_message_electronic_online_web_icon-icons.com_59986.png');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+.form-email button{
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  color: white;
+  padding: 10px 0px;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+.form-email h3{
+  font-family: "Source Sans Pro", sans-serif;
 }
