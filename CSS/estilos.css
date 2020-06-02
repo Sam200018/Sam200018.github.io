@@ -106,24 +106,24 @@ figure {
   background: white;
   display: flex;
   align-items: center;
-  justify-content: space-between;/*Para poner los elementos separados, cada quien a su lado*/
+  justify-content: space-between; /*Para poner los elementos separados, cada quien a su lado*/
 }
-.project-title{
+.project-title {
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 10px;
 }
-.project-course{
+.project-course {
   margin: 10px 0;
 }
-.project-date, 
-.project-url{
+.project-date,
+.project-url {
   margin: 10px 0;
 }
-.project-description{
+.project-description {
   font-size: 20px;
 }
-.project strong{
+.project strong {
   font-family: "Fjalla One", sans-serif;
 }
 .project-details {
@@ -183,4 +183,42 @@ figure {
 }
 .footer a {
   color: white;
+}
+.experience-list{
+  display: flex;
+}
+.experience-list-title{
+  padding-left: 10px;
+}
+.experience {
+  /* border: 1px solid red; */
+  margin: 10px;
+  width: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f4fbff;
+}
+.experience img{
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+.experience-details{
+  margin: 20px 40px;
+  margin-top: -40px;/*Junto con position podemos hacer que nuestro elemento suba sobre la imagen para dar el efecto de que está sobre ella*/
+  background-color: white;
+  position: relative;/* sirve para super posiciones pero tienes aún más funciones*/
+  padding: 20px;
+  text-align: center;
+}
+.experience-description{
+  text-align: left;
+}
+.experience-url{
+  color: #056fff;
+  border: 1px solid ;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
 }
