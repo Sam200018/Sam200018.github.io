@@ -78,7 +78,9 @@ figure {
   justify-content: space-between;
 }
 .hero-image{
-  object-fit: cover;
+  object-fit: contain;
+  border-radius: 35px ;
+  width: 160px;
 }
 .portfolio {
   background: #fafafa;
@@ -249,7 +251,7 @@ figure {
   
 }
 .social-link.facebook {
-  background-image: url("https://cdn.icon-icons.com/icons2/790/PNG/512/fb_icon-icons.com_65434.png");
+  background-image: url("https://image.flaticon.com/icons/svg/733/733603.svg");
   
 }
 .social-link.github {
@@ -265,7 +267,7 @@ figure {
   border-style: solid;
   border-radius: 5px;
   padding: 10px 20px 10px 25px;
-  background-image: url('https://cdn.icon-icons.com/icons2/656/PNG/512/mail_email_message_electronic_online_web_icon-icons.com_59986.png');
+  background-image: url('https://image.flaticon.com/icons/svg/88/88042.svg');
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -291,6 +293,6 @@ figure {
   height: inherit;
   display: inherit;
   align-items: inherit;
-  justify-content: inherit;
+  justify-content: space-around;
   flex-wrap: inherit;
 }
