@@ -47,11 +47,11 @@ h1 {
   margin: 0;
 }
 h1 strong {
-  color: #35d0ba;
+  color: #dc0714;
 }
 h2 {
   font-family: "Source Sans Pro", sans-serif;
-  color: #0C0C0C;
+  color: #0c0c0c;
   text-transform: uppercase;
   font-weight: bold; /*Es para poner las letras en negritas*/
   font-size: 24px;
@@ -67,21 +67,29 @@ figure {
   margin: 0;
 }
 .hero {
-  height: 300px;
-  /* background-image: url("https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/96945031_1309227679273464_9164215571091292160_o.jpg?_nc_cat=111&_nc_sid=09cbfe&_nc_eui2=AeGf65dwa0jBPXjjoS049ctEgqq2WpNsQSaCqrZak2xBJrerwjTa2R10Z70oVEFUBZ4R4THnQHdxWfd_Etp1Fnji&_nc_oc=AQkux92u86n06GGabt18r2Chc5by6g-3towlJvgCzBJkavPd8oZ3zxVJO8wF_6ks1zY&_nc_ht=scontent-qro1-1.xx&oh=b0adcccafbb9117bb8fbb7c7f7c38039&oe=5EED7308"); */
-  background-color: #162447;
-  /* background-size: 300px 300px; */
-  /* background-repeat: no-repeat; */
-  /* background-position: right; */
+  height: 400px;
+  background-color: #00192d;
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.hero-image {
-  object-fit: contain;
-  border-radius: 35px;
-  width: 160px;
+
+.description p {
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+}
+
+.resume_button{
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  margin: 10px ;
+  padding: 10px 30px;
+  background-color: #ffd700;
+  color:#0c0c0c;
+  border-radius: 10px;
+
 }
 .portfolio {
   background: #fafafa;
@@ -119,6 +127,7 @@ figure {
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 10px;
+  color: #ffd700;
 }
 .project-course {
   margin: 10px 0;
@@ -137,13 +146,15 @@ figure {
   width: 50%;
 }
 .project-imageContainer {
-  width: 50%;
+  width: 40%;
+  
 }
-.project-imageContainer img{
-  max-width: 100%;
+.project-imageContainer img {
+  max-width: 50%;
+  border-radius: 30px;
 }
 .header {
-  background-color: #DC0714;
+  background-color: #dc0714;
   color: white;
   display: flex;
   align-items: center;
@@ -153,6 +164,7 @@ figure {
 }
 .header a {
   color: white;
+  font-size: 20px;
   text-decoration: none;
   height: inherit;
   display: flex;
@@ -166,7 +178,7 @@ figure {
 .header ul li {
   height: inherit;
 }
-.logo img{
+.logo img {
   height: 150px;
 }
 .menu {
@@ -187,7 +199,7 @@ figure {
 }
 .footer {
   color: white;
-  background-color: #DC0714;
+  background-color: #dc0714;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -214,12 +226,12 @@ figure {
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
-  background: #00634D;
+  background: #00634d;
 }
 .experience img {
   width: 480px;
   height: 200px;
-  object-fit: cover;
+  object-fit:contain;
 }
 .experience-details {
   margin: 20px 40px;
@@ -230,7 +242,7 @@ figure {
   text-align: center;
 }
 .experience-description {
-  text-align: left;
+  text-align: justify;
 }
 .experience-url {
   color: #056fff;
@@ -240,7 +252,7 @@ figure {
   border-radius: 5px;
 }
 .contact {
-  background-color: #FF0000;
+  background-color: #ff0000;
   color: white;
   height: 150px;
   display: flex;
@@ -257,7 +269,6 @@ figure {
   margin: 0 10px;
   background-size: 50px 50px;
 }
-
 
 .social-link.twitter {
   background-image: url("https://img.icons8.com/ios-glyphs/90/000000/twitter--v1.png");
@@ -284,7 +295,7 @@ figure {
   border-style: solid;
   border-radius: 5px;
   padding: 10px 20px 10px 25px;
-  
+
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -294,7 +305,7 @@ figure {
   display: block;
   margin-top: 10px;
   background-color: #ffd700;
-  color: #0C0C0C;
+  color: #0c0c0c;
   padding: 10px 0px;
   border-radius: 5px;
   width: 100px;
@@ -318,75 +329,74 @@ figure {
 
 /* Desktop first hay que empezarlos desde el MQ más grande */
 @media screen and (max-width: 1024px) {
-  
 }
 
 @media screen and (max-width: 767px) {
-  .header{
+  .header {
     display: block;
     height: auto;
   }
-  .header ul{
+  .header ul {
     display: block;
-
   }
   .header ul li {
     height: 50px;
-    
   }
   .header a {
     justify-content: center;
   }
-  .header .logo{
+  .header .logo {
     text-align: center;
   }
-  .project{
+  .project {
     display: block;
   }
-  .project-imageContainer{
+  .project-imageContainer {
     width: auto;
     text-align: center;
   }
-  .project-details{
+  .project-details {
     width: auto;
   }
-  .project-course , .project-date ,.project-url{
-    margin: .3em 0;
+  .project-course,
+  .project-date,
+  .project-url {
+    margin: 0.3em 0;
   }
-  .project-title{
+  .project-title {
     font-size: 1.5em;
-    margin-bottom: .3em;
+    margin-bottom: 0.3em;
   }
-  .project-url{
+  .project-url {
     font-size: 1em;
   }
-  .project-course{
-    font-size: .7em;
+  .project-course {
+    font-size: 0.7em;
   }
-  .project-date{
+  .project-date {
     font-size: 1em;
   }
-  .project-description{
-    font-size: .8em;
+  .project-description {
+    font-size: 0.8em;
   }
 
-  .experience{
+  .experience {
     width: auto;
     flex-shrink: initial;
   }
-  .experience img{
+  .experience img {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .project-details{
+  .project-details {
     width: auto;
     font-size: 12px;
   }
-  .experience-details{
+  .experience-details {
     /*1em= 16px hasta este punto*/
-    margin: -2em .5em .5em;
+    margin: -2em 0.5em 0.5em;
     padding: 1em;
   }
 }

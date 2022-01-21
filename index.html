@@ -1,146 +1,184 @@
 <!DOCTYPE html>
-<html lang="es"><!--idioma español-->
-<head>
-    <meta charset="UTF-8"><!--conjunto de carcteres que voy a utlizar-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="es">
+  <!--idioma español-->
+  <head>
+    <meta charset="UTF-8" />
+    <!--conjunto de carcteres que voy a utlizar-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Samuel Bautista</title>
-    <link rel="icon" type="image/png" href="images/favicon.png"/>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/estilos.css"> <!--y por ultimo podemos agregar estilos desde un archivo en .css e ir agregando los estilos desde un archivo externo-->
-</head>
-<body>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/estilos.css" />
+    <!--y por ultimo podemos agregar estilos desde un archivo en .css e ir agregando los estilos desde un archivo externo-->
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <figure class="logo"> 
-                <img src="images/LogoSam22.png"  alt="Logo de http://samuelbautista.com" > 
-            </figure>
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a class="link" href="#Portafolio">Portafolio</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#Experiencia">Experiencia</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#Trabajo">Trabajemos juntos</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <figure class="logo">
+          <img
+            src="images/LogoSam22.png"
+            alt="Logo de http://samuelbautista.com"
+          />
+        </figure>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a class="link" href="#Portafolio">Portafolio</a>
+            </li>
+            <li>
+              <a class="link" href="#Experiencia">Experiencia</a>
+            </li>
+            <li>
+              <a class="link" href="#Trabajo">Trabajemos juntos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <!-- <section class="hero">
-        <div class="container">
-            <h1>
-                Hola! Soy <strong>Samuel Bautista</strong> <br> Desarollador <strong>Web</strong>
-            </h1>
-            <img class="hero-image" src="images/Sam.jpg" width="300px" alt="imagen principal"/> 
+    <section class="hero">
+      <div class="container">
+        <h1>
+          Hola! Soy <strong>Samuel Bautista</strong> <br />
+        </h1>
+        <div class="description">
+          <p>Geek🎮.</p>
+          <p>Software engineer👨‍💻.</p>
+          <p>Amante de F1 🏎️.</p>
+          <p>Mobile Development 📱.</p>
+          <p>Web Development 🌐.</p>
+          <a href="https://docs.google.com/document/d/14rgz16MuzmFpFpmKRmCHKb1Cbxp9EDbTLwJIwTgF8sQ/edit?usp=sharing" class="resume_button">
+              <span>Mi Resume</span>
+          </a>
         </div>
-    </section> -->
+      </div>
+    </section>
     <section id="Portafolio" class="portfolio">
-        <div class="container">
+      <div class="container">
+        <h2>Portafolio (proyectos destacados)</h2>
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Fast Fourier Transform App</h3>
+            <h4 class="project-course">Dart/Flutter</h6>
+            <h6 class="project-course">Flutter_bloc, syncfusion_flutter_charts</h5>
+            <p class="project-date">
+              <small><strong>Fecha:</strong> 14/12/2021</small>
+            </p>
+            <p class="project-url">
+              <small>
+                <strong>Puedes verlo en:</strong>
+                <a href="https://github.com/Sam200018/FTT_App">https://github.com/Sam200018/FTT_App</a>
+              </small>
+            </p>
+            <p class="project-description">
+              Es una pequeña app que hice para mi clase de Matematicas Avanzadas para la ingeniera donde usando unas funciones ya conocidas agregas valores para que la app, utilizando el algoritmo de la transformación rápida de Fourier, nos muestre unas graficas.
+              Esto es gracias al procesamiento de una señal discreta, en forma compleja.
+            </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img
+              class="project-image"
+              src="images/inicioFFT.png"
+              
+              alt="Captura de pantalla sobre FFT app"
+            />
+          </figure>
+          <figure class="project-imageContainer">
+            <img
+              class="project-image"
+              src="images/chartsFFT.png"
+              
+              alt="Captura de pantalla sobre FFT app"
+            />
+          </figure>
+          <figure class="project-imageContainer">
+            <img
+              class="project-image"
+              src="images/charts2FFT.png"
+              
+              alt="Captura de pantalla sobre FFT app"
+            />
+          </figure>
+        </article>
 
-            <h2>Portafolio (proyectos destacados)</h2>
-            <article class="project">
-                <div class="project-details">
-                    <h3 class="project-title">Platzi video</h3>
-                    <h6 class="project-course">React Native / React</h6>
-                    <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-                    <p class="project-url"><small> <strong>Puedes verlo en::</strong> www.proyecto.com/native</small></p>
-                    <p class="project-description">Descripción del proyecto</p> 
-                </div>
-                <figure class="project-imageContainer">
-                    <img class="project-image" src="/" width="500" alt="Imagen de javascript">
-                </figure>
-            </article>
-            <article class="project">
-                <div class="project-details">
-                    <h3 class="project-title">Platzi video</h3>
-                    <h6 class="project-course">React Native / React</h6>
-                    <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-                    <p class="project-url"><small> <strong>Puedes verlo en::</strong> www.proyecto.com/native</small></p>
-                    <p class="project-description">Descripción del proyecto</p> 
-                </div>
-                <figure class="project-imageContainer">
-                    <img class="project-image" src="/" width="500" alt="Imagen de javascript">
-                </figure>
-            </article>
-        </div>
+      </div>
     </section>
     <div class="container">
-        <h2 class="experience-list-title">Más sobre mi experiencia</h2>
+      <h2 class="experience-list-title">Más sobre mi experiencia</h2>
     </div>
     <section id="Experiencia" class="experience-list">
-        <div class="container">
+      <div class="container">
+        <article class="experience">
+          <figure class="experience-imageContainer">
+            <img class="experience-image" src="images/nuba-mexico-azul.png" alt="logo nuba"/>
+          </figure>
+          <div class="experience-details">
+            <h3 class="experience-title">Becario en Nuba MX</h3>
+            <p class="experience-description">Se mejoró el flujo de trabajo de la administración haciendo coincidir la información del empleado con la información activa.
+                Generé una orden a estos activos para saber quién tiene este activo y cuál es su estado usando fotos y fechas.</p>
+            <a
+              class="experience-url"
+              href="https://portal.nubamexico.com/public/#/"
+              target="_blank"
+              >Ver</a
+            >
+          </div>
+        </article>
 
-            <article class="experience">
-                <figure class="experience-imageContainer">
-                    <img class="experience-image" src="/" />
-                </figure>
-                <div class="experience-details">
-                    <h3 class="experience-title">Conf México 2020</h3>
-                    <p class="experience-description">Descripción del evento</p>
-                    <a class="experience-url" href="https://youtu.be/tCJ5uBA3DU4" target="_blank">Ver evento</a>
-                </div>
-            </article>
-            <article class="experience">
-                <figure class="experience-imageContainer">
-                    <img class="experience-image" src="/" />
-                </figure>
-                <div class="experience-details">
-                    <h3 class="experience-title">Conf México 2020</h3>
-                    <p class="experience-description">Descripción del evento</p>
-                    <a class="experience-url" href="https://youtu.be/tCJ5uBA3DU4" target="_blank">Ver evento</a>
-                </div>
-            </article>
-            <article class="experience">
-                <figure class="experience-imageContainer">
-                    <img class="experience-image" src="/" />
-                </figure>
-                <div class="experience-details">
-                    <h3 class="experience-title">Conf México 2020</h3>
-                    <p class="experience-description">Descripción del evento</p>
-                    <a class="experience-url" href="https://youtu.be/tCJ5uBA3DU4" target="_blank">Ver evento</a>
-                </div>
-            </article>
-            <article class="experience">
-                <figure class="experience-imageContainer">
-                    <img class="experience-image" src="/" />
-                </figure>
-                <div class="experience-details">
-                    <h3 class="experience-title">Conf México 2020</h3>
-                    <p class="experience-description">Descripción del evento</p>
-                    <a class="experience-url" href="https://youtu.be/tCJ5uBA3DU4" target="_blank">Ver evento</a>
-                </div>
-            </article>
-        </div>
+      </div>
     </section>
     <section id="Trabajo" class="contact">
-        <div class="container">
-            <form class="form-email" action="https://formspree.io/mgenknzw" method="POST"> 
-                     <h3>¿Creamos algo juntos?</h3>
-                <input type="email" type="datetime" name="_replyto" placeholder="Dejanos tu email">
-                 <button type="submit">enviar</button>
-            </form>
-            <div class="social">
-                <a href="https://twitter.com/samuelbaubas" class="social-link twitter"></a>
-                <a href="https://www.facebook.com/samuel.bautista.10236/" class="social-link facebook"></a>
-                <a href="https://github.com/Sam200018" class="social-link github"></a>
-                <a href="https://www.instagram.com/sam_baubas/" class="social-link instagram"></a>
-            </div>
+      <div class="container">
+        <form
+          class="form-email"
+          action="https://formspree.io/mgenknzw"
+          method="POST"
+        >
+          <h3>¿Creamos algo juntos?</h3>
+          <input
+            type="email"
+            type="datetime"
+            name="_replyto"
+            placeholder="Dejanos tu email"
+          />
+          <button type="submit">
+              <a href="">
+
+                  enviar
+              </a>
+            </button>
+        </form>
+        <div class="social">
+          <a
+            href="https://twitter.com/samuelbaubas"
+            class="social-link twitter"
+          ></a>
+          <a
+            href="https://www.facebook.com/samuel.bautista.10236/"
+            class="social-link facebook"
+          ></a>
+          <a href="https://github.com/Sam200018" class="social-link github"></a>
+          <a
+            href="https://www.instagram.com/sam_baubas/"
+            class="social-link instagram"
+          ></a>
         </div>
+      </div>
     </section>
-    <footer class="footer"> 
-        <div class="container">
-            <div>
-                <p>Todos los derechos reservados. 2022 </p>
-            </div>
-            <div>
-                <p>  Designed with love <\3 by <a href="https://twitter.com/samuelbaubas">Samuel Bautista</a></p>
-            </div>
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <p>Todos los derechos reservados. 2022</p>
         </div>
-    </footer>   
-</body>
+        <div>
+          <p>
+            Designed with love <\3 by
+            <a href="https://twitter.com/samuelbaubas">Samuel Bautista</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
-
-
