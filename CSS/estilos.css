@@ -51,7 +51,7 @@ h1 strong {
 }
 h2 {
   font-family: "Source Sans Pro", sans-serif;
-  color: #35d0ba;
+  color: #0C0C0C;
   text-transform: uppercase;
   font-weight: bold; /*Es para poner las letras en negritas*/
   font-size: 24px;
@@ -143,12 +143,12 @@ figure {
   max-width: 100%;
 }
 .header {
-  background-color: #162447;
+  background-color: #DC0714;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 170px;
   flex-wrap: wrap;
 }
 .header a {
@@ -165,6 +165,9 @@ figure {
 }
 .header ul li {
   height: inherit;
+}
+.logo img{
+  height: 150px;
 }
 .menu {
   height: inherit;
@@ -184,7 +187,7 @@ figure {
 }
 .footer {
   color: white;
-  background-color: #162447;
+  background-color: #DC0714;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -197,7 +200,7 @@ figure {
   color: white;
 }
 .experience-list {
-  background-color: #f4fbff;
+  /* background-color: #f4fbff; */
   display: flex;
   flex-wrap: wrap;
 }
@@ -211,7 +214,7 @@ figure {
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
-  background: #f4fbff;
+  background: #00634D;
 }
 .experience img {
   width: 480px;
@@ -237,7 +240,7 @@ figure {
   border-radius: 5px;
 }
 .contact {
-  background-color: #e43f5a;
+  background-color: #FF0000;
   color: white;
   height: 150px;
   display: flex;
@@ -254,24 +257,34 @@ figure {
   margin: 0 10px;
   background-size: 50px 50px;
 }
+
+
 .social-link.twitter {
-  background-image: url("https://image.flaticon.com/icons/svg/733/733635.svg");
+  background-image: url("https://img.icons8.com/ios-glyphs/90/000000/twitter--v1.png");
+  background-color: white;
+  border-radius: 50px;
 }
 .social-link.facebook {
-  background-image: url("https://image.flaticon.com/icons/svg/733/733603.svg");
+  background-image: url("https://img.icons8.com/ios/120/000000/facebook-new.png");
+  background-color: white;
+  border-radius: 50px;
 }
 .social-link.github {
-  background-image: url("https://image.flaticon.com/icons/svg/2111/2111432.svg");
+  background-image: url("https://img.icons8.com/ios-glyphs/120/000000/github.png");
+  background-color: white;
+  border-radius: 50px;
 }
 .social-link.instagram {
-  background-image: url("https://image.flaticon.com/icons/svg/733/733614.svg");
+  background-image: url("https://img.icons8.com/material-outlined/192/000000/instagram-new--v2.png");
+  background-color: white;
+  border-radius: 50px;
 }
 .form-email input {
   border-color: gray;
   border-style: solid;
   border-radius: 5px;
   padding: 10px 20px 10px 25px;
-  background-image: url("https://image.flaticon.com/icons/svg/88/88042.svg");
+  
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -280,8 +293,8 @@ figure {
 .form-email button {
   display: block;
   margin-top: 10px;
-  background: transparent;
-  color: white;
+  background-color: #ffd700;
+  color: #0C0C0C;
   padding: 10px 0px;
   border-radius: 5px;
   width: 100px;
