@@ -22,8 +22,13 @@ valores*/
 /*gris claro= #626262*/
 /*background gris= #1b2127*/
 /*celeste= #026fff*/
+@font-face {
+  font-family: "montserrat";
+  src: url(/fonts/Montserrat-Regular.ttf);
+}
+
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 h1,
@@ -70,7 +75,7 @@ figure {
   height: 400px;
   background-color: #00192d;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -81,15 +86,14 @@ figure {
   font-size: 20px;
 }
 
-.resume_button{
+.resume_button {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
-  margin: 10px ;
+  margin: 10px;
   padding: 10px 30px;
   background-color: #ffd700;
-  color:#0c0c0c;
+  color: #0c0c0c;
   border-radius: 10px;
-
 }
 .portfolio {
   background: #fafafa;
@@ -131,10 +135,24 @@ figure {
 }
 .project-course {
   margin: 10px 0;
+  font-size: 25px;
 }
+
+.detail {
+  font-weight: bolder;
+}
+.project-libraries,
 .project-date,
 .project-url {
-  margin: 10px 0;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.project-url a {
+  background-color: #00634d;
+  color: #fafafa;
+
+  padding: 10px;
+  border-radius: 10px;
 }
 .project-description {
   font-size: 20px;
@@ -147,7 +165,6 @@ figure {
 }
 .project-imageContainer {
   width: 40%;
-  
 }
 .project-imageContainer img {
   max-width: 50%;
@@ -183,6 +200,7 @@ figure {
 }
 .menu {
   height: inherit;
+  font-family: "Roboto", sans-serif;
 }
 .flexbox {
   display: flex;
@@ -231,7 +249,7 @@ figure {
 .experience img {
   width: 480px;
   height: 200px;
-  object-fit:contain;
+  object-fit: contain;
 }
 .experience-details {
   margin: 20px 40px;
@@ -250,6 +268,16 @@ figure {
   padding: 5px 20px;
   text-decoration: none;
   border-radius: 5px;
+}
+.skillset-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skillset {
+  padding: 20px;
+  background-color: #ffd700;
+  height: 200px;
+  margin-bottom: 80px;
 }
 .contact {
   background-color: #ff0000;
@@ -327,6 +355,10 @@ figure {
   flex-wrap: inherit;
 }
 
+.skillset .container img {
+  height: 90px;
+}
+
 /* Desktop first hay que empezarlos desde el MQ más grande */
 @media screen and (max-width: 1024px) {
 }
@@ -363,6 +395,7 @@ figure {
   .project-url {
     margin: 0.3em 0;
   }
+
   .project-title {
     font-size: 1.5em;
     margin-bottom: 0.3em;
@@ -390,14 +423,50 @@ figure {
 }
 
 @media screen and (max-width: 480px) {
+  .hero{
+    height: 40em;
+  }
   .project-details {
     width: auto;
     font-size: 12px;
+  }
+  .project-title {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #ffd700;
+  }
+  .container{
+    padding: 1.5em;
   }
   .experience-details {
     /*1em= 16px hasta este punto*/
     margin: -2em 0.5em 0.5em;
     padding: 1em;
+  }
+  .project-course {
+    margin: 10px 0;
+    font-size: 1.5em;
+  }
+  .contact {
+    height: 20em;
+  }
+
+  .project-description {
+    font-size: 1.5em;
+  }
+
+  .project-libraries,
+  .project-date,
+  .project-url {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  .skillset {
+    padding: 20px;
+    background-color: #ffd700;
+    height: 20em;
+    margin-bottom: 80px;
   }
 }
 

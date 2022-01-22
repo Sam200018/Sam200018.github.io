@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="CSS/estilos.css" />
     <!--y por ultimo podemos agregar estilos desde un archivo en .css e ir agregando los estilos desde un archivo externo-->
   </head>
@@ -34,23 +40,27 @@
             <li>
               <a class="link" href="#Trabajo">Trabajemos juntos</a>
             </li>
+            <li>
+              <a class="link" href="#Skillset">Skillset</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
     <section class="hero">
       <div class="container">
-        <h1>
-          Hola! Soy <strong>Samuel Bautista</strong> <br />
-        </h1>
+        <h1>Hola! Soy <strong>Samuel Bautista</strong> <br /></h1>
         <div class="description">
           <p>Geek🎮.</p>
           <p>Software engineer👨‍💻.</p>
           <p>Amante de F1 🏎️.</p>
           <p>Mobile Development 📱.</p>
           <p>Web Development 🌐.</p>
-          <a href="https://docs.google.com/document/d/14rgz16MuzmFpFpmKRmCHKb1Cbxp9EDbTLwJIwTgF8sQ/edit?usp=sharing" class="resume_button">
-              <span>Mi Resume</span>
+          <a
+            href="https://docs.google.com/document/d/14rgz16MuzmFpFpmKRmCHKb1Cbxp9EDbTLwJIwTgF8sQ/edit?usp=sharing"
+            class="resume_button"
+          >
+            <span>Mi Resume</span>
           </a>
         </div>
       </div>
@@ -61,27 +71,34 @@
         <article class="project">
           <div class="project-details">
             <h3 class="project-title">Fast Fourier Transform App</h3>
-            <h4 class="project-course">Dart/Flutter</h6>
-            <h6 class="project-course">Flutter_bloc, syncfusion_flutter_charts</h5>
+            <h4 class="project-course">Dart/Flutter</h4>
             <p class="project-date">
-              <small><strong>Fecha:</strong> 14/12/2021</small>
+              <span class="detail"> Packages: </span>
+              Flutter_bloc, syncfusion_flutter_charts
+            </p>
+            <p class="project-date">
+              <span class="detail"> Fecha: </span>
+              14/12/2021
             </p>
             <p class="project-url">
-              <small>
-                <strong>Puedes verlo en:</strong>
-                <a href="https://github.com/Sam200018/FTT_App">https://github.com/Sam200018/FTT_App</a>
-              </small>
+              
+              <a href="https://github.com/Sam200018/FTT_App"
+                >Ver proyecto
+              </a>
             </p>
             <p class="project-description">
-              Es una pequeña app que hice para mi clase de Matematicas Avanzadas para la ingeniera donde usando unas funciones ya conocidas agregas valores para que la app, utilizando el algoritmo de la transformación rápida de Fourier, nos muestre unas graficas.
-              Esto es gracias al procesamiento de una señal discreta, en forma compleja.
+              Es una pequeña app que hice para mi clase de Matematicas Avanzadas
+              para la ingeniera donde usando unas funciones ya conocidas agregas
+              valores para que la app, utilizando el algoritmo de la
+              transformación rápida de Fourier, nos muestre unas graficas. Esto
+              es gracias al procesamiento de una señal discreta, en forma
+              compleja.
             </p>
           </div>
           <figure class="project-imageContainer">
             <img
               class="project-image"
               src="images/inicioFFT.png"
-              
               alt="Captura de pantalla sobre FFT app"
             />
           </figure>
@@ -89,7 +106,6 @@
             <img
               class="project-image"
               src="images/chartsFFT.png"
-              
               alt="Captura de pantalla sobre FFT app"
             />
           </figure>
@@ -97,12 +113,10 @@
             <img
               class="project-image"
               src="images/charts2FFT.png"
-              
               alt="Captura de pantalla sobre FFT app"
             />
           </figure>
         </article>
-
       </div>
     </section>
     <div class="container">
@@ -112,12 +126,20 @@
       <div class="container">
         <article class="experience">
           <figure class="experience-imageContainer">
-            <img class="experience-image" src="images/nuba-mexico-azul.png" alt="logo nuba"/>
+            <img
+              class="experience-image"
+              src="images/nuba-mexico-azul.png"
+              alt="logo nuba"
+            />
           </figure>
           <div class="experience-details">
             <h3 class="experience-title">Becario en Nuba MX</h3>
-            <p class="experience-description">Se mejoró el flujo de trabajo de la administración haciendo coincidir la información del empleado con la información activa.
-                Generé una orden a estos activos para saber quién tiene este activo y cuál es su estado usando fotos y fechas.</p>
+            <p class="experience-description">
+              Se mejoró el flujo de trabajo de la administración haciendo
+              coincidir la información del empleado con la información activa.
+              Generé una orden a estos activos para saber quién tiene este
+              activo y cuál es su estado usando fotos y fechas.
+            </p>
             <a
               class="experience-url"
               href="https://portal.nubamexico.com/public/#/"
@@ -126,6 +148,22 @@
             >
           </div>
         </article>
+      </div>
+    </section>
+    <div class="container">
+      <h2>Skillset</h2>
+    </div>
+    <section id="Skillset" class="skillset-list skillset">
+      <div class="container">
+        <img src="https://img.icons8.com/color/144/000000/dart.png" alt="logo de tecnologia" />
+        <img src="https://img.icons8.com/color/144/000000/flutter.png" alt="logo de tecnologia" />
+        <img src="https://img.icons8.com/color/144/000000/kotlin.png" alt="logo de tecnologia" />
+        <img src="https://img.icons8.com/color/144/000000/firebase.png" alt="logo de tecnologia" />
+        <img src="https://img.icons8.com/color/144/000000/javascript--v1.png" alt="logo de tecnologia" />
+        <img src="https://img.icons8.com/color/144/000000/html-5--v1.png" alt="logo de tecnologia" />
+        <img src="https://img.icons8.com/color/144/000000/css3.png" alt="logo de tecnologia" />
+        <img src="https://img.icons8.com/external-flat-juicy-fish/144/000000/external-php-coding-and-development-flat-flat-juicy-fish.png" alt="logo de tecnologia" />
+        <img src="https://img.icons8.com/external-soft-fill-juicy-fish/144/000000/external-sql-servers-and-networks-soft-fill-soft-fill-juicy-fish.png" alt="logo de tecnologia"/>
 
       </div>
     </section>
@@ -144,11 +182,8 @@
             placeholder="Dejanos tu email"
           />
           <button type="submit">
-              <a href="">
-
-                  enviar
-              </a>
-            </button>
+            <a href=""> enviar </a>
+          </button>
         </form>
         <div class="social">
           <a
