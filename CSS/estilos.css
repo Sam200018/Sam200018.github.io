@@ -4,496 +4,563 @@ declaraciones
 propiedades
 valores*/
 
+
 /* selector de etiqueta header - seccion - articule - nav */
+
+
 /* header{
     background:pink ;
 } */
 
+
 /* selector descendente */
+
+
 /* body header div nav ol li a */
 
+
 /* selector de clase . */
+
+
 /* .link */
 
+
 /* selector de id */
+
+
 /* #portafolio */
 
+
 /*gris oscuro= #1d255c*/
+
+
 /*gris claro= #626262*/
+
+
 /*background gris= #1b2127*/
+
+
 /*celeste= #026fff*/
+
 @font-face {
-  font-family: "montserrat";
-  src: url(/fonts/Montserrat-Regular.ttf);
+    font-family: "montserrat";
+    src: url(/fonts/Montserrat-Regular.ttf);
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Fjalla One", sans-serif;
-  font-weight: normal;
-  /* font-style: oblique; */
+    font-family: "Fjalla One", sans-serif;
+    font-weight: normal;
+    /* font-style: oblique; */
 }
+
 h1 {
-  font-size: 40px;
-  line-height: 1.5;
-  letter-spacing: -0.2px;
-  color: white;
-  margin: 0 auto;
-  /* text-transform: capitalize;
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+    color: white;
+    margin: 0 auto;
+    /* text-transform: capitalize;
     text-decoration: dashed; */
-  margin: 0;
+    margin: 0;
 }
+
 h1 strong {
-  color: #dc0714;
+    color: #dc0714;
 }
+
 h2 {
-  font-family: "Source Sans Pro", sans-serif;
-  color: #0c0c0c;
-  text-transform: uppercase;
-  font-weight: bold; /*Es para poner las letras en negritas*/
-  font-size: 24px;
-  margin-bottom: 40px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #0c0c0c;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*Es para poner las letras en negritas*/
+    font-size: 24px;
+    margin-bottom: 40px;
 }
+
 ol,
 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
+
 figure {
-  margin: 0;
+    margin: 0;
 }
+
 .hero {
-  height: 400px;
-  background-color: #00192d;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    height: 400px;
+    background-color: #00192d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .description p {
-  color: white;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 20px;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
 }
 
 .resume_button {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 20px;
-  margin: 10px;
-  padding: 10px 30px;
-  background-color: #ffd700;
-  color: #0c0c0c;
-  border-radius: 10px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px 30px;
+    background-color: #ffd700;
+    color: #0c0c0c;
+    border-radius: 10px;
 }
+
 .portfolio {
-  background: #fafafa;
-  padding: 20px;
+    background: #fafafa;
+    padding: 20px;
 }
+
 .project {
-  /* border-top: 10px solid red;
+    /* border-top: 10px solid red;
   border-right: 10px solid green;
   border-left: 10px solid royalblue;
   border-bottom: 10px solid orange; */
-  /* border-color: royalblue; */
-  /*color: blue;*/
-  /* border-top-color: red;
+    /* border-color: royalblue; */
+    /*color: blue;*/
+    /* border-top-color: red;
   border-top-width: 15px;
   border-top-style: solid; */
-  border: 1px solid gray;
-  border-radius: 10px;
-  /* border-top-left-radius: 50px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    /* border-top-left-radius: 50px;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;*/
-  /* margin: 10px; */
-  margin-bottom: 15px;
-  /* margin-right
+    /* margin: 10px; */
+    margin-bottom: 15px;
+    /* margin-right
     margin-left
     margin-top */
-  padding: 20px;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /*Para poner los elementos separados, cada quien a su lado*/
-  flex-wrap: wrap;
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*Para poner los elementos separados, cada quien a su lado*/
+    flex-wrap: wrap;
 }
+
 .project-title {
-  font-size: 30px;
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: #ffd700;
-}
-.project-course {
-  margin: 10px 0;
-  font-size: 25px;
-}
-
-.detail {
-  font-weight: bolder;
-}
-.project-libraries,
-.project-date,
-.project-url {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-.project-url a {
-  background-color: #00634d;
-  color: #fafafa;
-
-  padding: 10px;
-  border-radius: 10px;
-}
-.project-description {
-  font-size: 20px;
-}
-.project strong {
-  font-family: "Fjalla One", sans-serif;
-}
-.project-details {
-  width: 50%;
-}
-.project-imageContainer {
-  width: 40%;
-}
-.project-imageContainer img {
-  max-width: 50%;
-  border-radius: 30px;
-}
-.header {
-  background-color: #dc0714;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 170px;
-  flex-wrap: wrap;
-}
-.header a {
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-  height: inherit;
-  display: flex;
-  align-items: center;
-  padding: 0 10px;
-}
-.header ul {
-  display: flex;
-  height: inherit;
-}
-.header ul li {
-  height: inherit;
-}
-.logo img {
-  height: 150px;
-}
-.menu {
-  height: inherit;
-  font-family: "Roboto", sans-serif;
-}
-.flexbox {
-  display: flex;
-  /* flex-direction: column; */
-  /* flex-wrap: nowrap; Para que los elemento no se les permita bajar*/
-  flex-wrap: wrap; /*Esto es para que cuando el numero de elementos lenen el espacio horizontal pasen a la perte inferior*/
-}
-.box {
-  width: 50px;
-  height: 50px;
-  border: 1px solid red;
-  margin: 5px;
-  flex-shrink: 0; /*Capacidad que les permite no encogerse*/
-}
-.footer {
-  color: white;
-  background-color: #dc0714;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.footer img {
-  vertical-align: middle;
-}
-.footer a {
-  color: white;
-}
-.experience-list {
-  /* background-color: #f4fbff; */
-  display: flex;
-  flex-wrap: wrap;
-}
-.experience-list-title {
-  padding-left: 10px;
-}
-.experience {
-  /* border: 1px solid red; */
-  margin: 1%;
-  width: 48%;
-  flex-shrink: 0;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #00634d;
-}
-.experience img {
-  width: 480px;
-  height: 200px;
-  object-fit: contain;
-}
-.experience-details {
-  margin: 20px 40px;
-  margin-top: -40px; /*Junto con position podemos hacer que nuestro elemento suba sobre la imagen para dar el efecto de que está sobre ella*/
-  background-color: white;
-  position: relative; /* sirve para super posiciones pero tienes aún más funciones*/
-  padding: 20px;
-  text-align: center;
-}
-.experience-description {
-  text-align: justify;
-}
-.experience-url {
-  color: #056fff;
-  border: 1px solid;
-  padding: 5px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.skillset-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-.skillset {
-  padding: 20px;
-  background-color: #ffd700;
-  height: 200px;
-  margin-bottom: 80px;
-}
-
-.tecnologia {
-  text-align: center;
-  font-size: 20px;
-}
-.contact {
-  background-color: #ff0000;
-  color: white;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 10px;
-  flex-wrap: wrap;
-}
-.social-link {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  /* border: 1px solid white; */
-  margin: 0 10px;
-  background-size: 50px 50px;
-}
-
-.social-link.twitter {
-  background-image: url("https://img.icons8.com/ios-glyphs/90/000000/twitter--v1.png");
-  background-color: white;
-  border-radius: 50px;
-}
-.social-link.facebook {
-  background-image: url("https://img.icons8.com/ios/120/000000/facebook-new.png");
-  background-color: white;
-  border-radius: 50px;
-}
-.social-link.github {
-  background-image: url("https://img.icons8.com/ios-glyphs/120/000000/github.png");
-  background-color: white;
-  border-radius: 50px;
-}
-.social-link.instagram {
-  background-image: url("https://img.icons8.com/material-outlined/192/000000/instagram-new--v2.png");
-  background-color: white;
-  border-radius: 50px;
-}
-.form-email input {
-  border-color: gray;
-  border-style: solid;
-  border-radius: 5px;
-  padding: 10px 20px 10px 25px;
-
-  background-size: 15px 15px;
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: 5px;
-}
-.form-email button {
-  display: block;
-  margin-top: 10px;
-  background-color: #ffd700;
-  color: #0c0c0c;
-  padding: 10px 0px;
-  border-radius: 5px;
-  width: 100px;
-  margin-top: 10px;
-}
-
-.form-email button:hover {
-  cursor: pointer;
-
-  background-color: #00634d;
-  color: #fafafa;
-}
-.form-email h3 {
-  font-family: "Source Sans Pro", sans-serif;
-}
-.container {
-  /* border: 1px solid red; */
-  max-width: 1000px;
-  /* width: 100%; */
-  flex: 1;
-  margin: 0 auto;
-  height: inherit;
-  display: inherit;
-  align-items: inherit;
-  justify-content: space-around;
-  flex-wrap: inherit;
-}
-
-.skillset .container img {
-  height: 90px;
-}
-
-/* Desktop first hay que empezarlos desde el MQ más grande */
-@media screen and (max-width: 1024px) {
-  .skillset{
-    height: 10em;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .header {
-    display: block;
-    height: auto;
-  }
-  .header ul {
-    display: block;
-  }
-  .header ul li {
-    height: 50px;
-  }
-  .header a {
-    justify-content: center;
-  }
-  .header .logo {
-    text-align: center;
-  }
-  .project {
-    display: block;
-  }
-  .project-imageContainer {
-    width: auto;
-    text-align: center;
-  }
-  .project-details {
-    width: auto;
-  }
-  .project-course,
-  .project-date,
-  .project-url {
-    margin: 0.3em 0;
-  }
-
-  .project-title {
-    font-size: 1.5em;
-    margin-bottom: 0.3em;
-  }
-  .project-url {
-    font-size: 1em;
-  }
-  .project-course {
-    font-size: 0.7em;
-  }
-  .project-date {
-    font-size: 1em;
-  }
-  .project-description {
-    font-size: 0.8em;
-  }
-
-  .experience {
-    width: auto;
-    flex-shrink: initial;
-  }
-  .experience img {
-    width: 100%;
-  }
-  .skillset{
-    height: 20em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .hero {
-    height: 40em;
-  }
-  .project-details {
-    width: auto;
-    font-size: 12px;
-  }
-  .project-title {
-    font-size: 2.5em;
+    font-size: 30px;
     margin-top: 0;
     margin-bottom: 10px;
     color: #ffd700;
-  }
-  .container {
-    padding: 1.5em;
-  }
-  .experience-details {
-    /*1em= 16px hasta este punto*/
-    margin: -2em 0.5em 0.5em;
-    padding: 1em;
-  }
-  .project-course {
+}
+
+.project-course {
     margin: 10px 0;
-    font-size: 1.5em;
-  }
-  .contact {
-    height: 20em;
-  }
+    font-size: 25px;
+}
 
-  .project-description {
-    font-size: 1.5em;
-  }
+.detail {
+    font-weight: bolder;
+}
 
-  .project-libraries,
-  .project-date,
-  .project-url {
-    font-size: 1em;
+.project-libraries,
+.project-date,
+.project-url {
+    font-size: 20px;
     margin-bottom: 15px;
-  }
-  .skillset {
+}
+
+.project-url a {
+    background-color: #00634d;
+    color: #fafafa;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.project-description {
+    font-size: 20px;
+}
+
+.project strong {
+    font-family: "Fjalla One", sans-serif;
+}
+
+.project-details {
+    width: 50%;
+}
+
+.project-imageContainer {
+    width: 40%;
+}
+
+.project-imageContainer img {
+    max-width: 50%;
+    border-radius: 30px;
+}
+
+.header {
+    background-color: #dc0714;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 170px;
+    flex-wrap: wrap;
+}
+
+.header a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.header ul {
+    display: flex;
+    height: inherit;
+}
+
+.header ul li {
+    height: inherit;
+}
+
+.logo img {
+    height: 150px;
+}
+
+.menu {
+    height: inherit;
+    font-family: "Roboto", sans-serif;
+}
+
+.flexbox {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: nowrap; Para que los elemento no se les permita bajar*/
+    flex-wrap: wrap;
+    /*Esto es para que cuando el numero de elementos lenen el espacio horizontal pasen a la perte inferior*/
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    margin: 5px;
+    flex-shrink: 0;
+    /*Capacidad que les permite no encogerse*/
+}
+
+.footer {
+    color: white;
+    background-color: #dc0714;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.footer a {
+    color: white;
+}
+
+.experience-list {
+    /* background-color: #f4fbff; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experience-list-title {
+    padding-left: 10px;
+}
+
+.experience {
+    /* border: 1px solid red; */
+    margin: 1%;
+    width: 48%;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #00734d;
+}
+
+.experience img {
+    width: 480px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.experience-details {
+    margin: 20px 40px;
+    margin-top: -40px;
+    /*Junto con position podemos hacer que nuestro elemento suba sobre la imagen para dar el efecto de que está sobre ella*/
+    background-color: white;
+    position: relative;
+    /* sirve para super posiciones pero tienes aún más funciones*/
+    padding: 20px;
+    text-align: center;
+}
+
+.experience-description {
+    text-align: justify;
+}
+
+.experience-url {
+    color: #056fff;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.skillset-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skillset {
     padding: 20px;
     background-color: #ffd700;
-    height: 40em;
+    height: 200px;
     margin-bottom: 80px;
-  }
+}
+
+.tecnologia {
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact {
+    background-color: #ff0000;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid white; */
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+
+.social-link.twitter {
+    background-image: url("https://img.icons8.com/ios-glyphs/90/000000/twitter--v1.png");
+    background-color: white;
+    border-radius: 50px;
+}
+
+.social-link.facebook {
+    background-image: url("https://img.icons8.com/ios/120/000000/facebook-new.png");
+    background-color: white;
+    border-radius: 50px;
+}
+
+.social-link.github {
+    background-image: url("https://img.icons8.com/ios-glyphs/120/000000/github.png");
+    background-color: white;
+    border-radius: 50px;
+}
+
+.social-link.instagram {
+    background-image: url("https://img.icons8.com/material-outlined/192/000000/instagram-new--v2.png");
+    background-color: white;
+    border-radius: 50px;
+}
+
+.form-email input {
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button {
+    display: block;
+    margin-top: 10px;
+    background-color: #ffd700;
+    color: #0c0c0c;
+    padding: 10px 0px;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.form-email button:hover {
+    cursor: pointer;
+    background-color: #00634d;
+    color: #fafafa;
+}
+
+.form-email h3 {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+    /* border: 1px solid red; */
+    max-width: 1000px;
+    /* width: 100%; */
+    flex: 1;
+    margin: 0 auto;
+    height: inherit;
+    display: inherit;
+    align-items: inherit;
+    justify-content: space-around;
+    flex-wrap: inherit;
+}
+
+.skillset .container img {
+    height: 90px;
+}
+
+
+/* Desktop first hay que empezarlos desde el MQ más grande */
+
+@media screen and (max-width: 1024px) {
+    .skillset {
+        height: 10em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        display: block;
+        height: auto;
+    }
+    .header ul {
+        display: block;
+    }
+    .header ul li {
+        height: 50px;
+    }
+    .header a {
+        justify-content: center;
+    }
+    .header .logo {
+        text-align: center;
+    }
+    .project {
+        display: block;
+    }
+    .project-imageContainer {
+        width: auto;
+        text-align: center;
+    }
+    .project-details {
+        width: auto;
+    }
+    .project-course,
+    .project-date,
+    .project-url {
+        margin: 0.3em 0;
+    }
+    .project-title {
+        font-size: 1.5em;
+        margin-bottom: 0.3em;
+    }
+    .project-url {
+        font-size: 1em;
+    }
+    .project-course {
+        font-size: 0.7em;
+    }
+    .project-date {
+        font-size: 1em;
+    }
+    .project-description {
+        font-size: 0.8em;
+    }
+    .experience {
+        width: auto;
+        flex-shrink: initial;
+    }
+    .experience img {
+        width: 100%;
+    }
+    .skillset {
+        height: 20em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        height: 40em;
+    }
+    .project-details {
+        width: auto;
+        font-size: 12px;
+    }
+    .project-title {
+        font-size: 2.5em;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #ffd700;
+    }
+    .container {
+        padding: 1.5em;
+    }
+    .experience-details {
+        /*1em= 16px hasta este punto*/
+        margin: -2em 0.5em 0.5em;
+        padding: 1em;
+    }
+    .project-course {
+        margin: 10px 0;
+        font-size: 1.5em;
+    }
+    .contact {
+        height: 20em;
+    }
+    .project-description {
+        font-size: 1.5em;
+    }
+    .project-libraries,
+    .project-date,
+    .project-url {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+    .skillset {
+        padding: 20px;
+        background-color: #ffd700;
+        height: 40em;
+        margin-bottom: 80px;
+    }
 }
 
 @media screen and (max-width: 320px) {
-  body {
-    border: 10px solid green;
-  }
-
-  .skillset{
-    height: 50em;
-  }
+    body {
+        border: 10px solid green;
+    }
+    .skillset {
+        height: 50em;
+    }
 }
