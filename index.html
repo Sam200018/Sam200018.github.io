@@ -289,13 +289,18 @@
                 <h2>Creemos algo increíble juntos.</h2>
                 <p>¿Tienes un proyecto en mente? Estoy disponible para colaboraciones técnicas y nuevos retos.</p>
                 <div class="cta-buttons">
-                    <a href="https://formspree.io/mgenknzw" class="btn btn-primary"><i class="fas fa-envelope"></i> Contáctame</a>
+                    <form class="cta-form" action="https://formspree.io/mgenknzw" method="POST">
+                        <label class="sr-only" for="contact-email">Tu email</label>
+                        <input id="contact-email" type="email" name="_replyto" placeholder="Tu email" required />
+                        <input type="hidden" name="message" value="Nuevo contacto desde samuelbautista.com" />
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-envelope"></i> Contáctame</button>
+                    </form>
                     <a href="screens/resume.html" class="btn btn-secondary"><i class="fas fa-file-alt"></i> Ver Resume</a>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
